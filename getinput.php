@@ -10,7 +10,7 @@
 <body>
 
     <div class="container w-50 mt-5">
-        <form action="getinput.php" class="form-control" method="get">
+        <form action="getinput.php" class="form-control" method="post">
             <h1 class="text-center">Sign in</h1>
 
            <!-- Username Field -->
@@ -32,8 +32,8 @@
     </div>
 
     <?php 
-        $username = $_GET["username"];
-        $password = $_GET["password"];
+        $username = $_POST["username"];
+        $password = $_POST["password"];
 
         echo "Your username is: $username";
         echo "<br>";
